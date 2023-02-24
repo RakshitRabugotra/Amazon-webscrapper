@@ -60,4 +60,4 @@ if __name__ == '__main__':
     product = scrap_information(URL)
 
     for field, text in product.items():
-        print(field.capitalize(), text)
+        print(field.capitalize(), text, sep=':\t')
