@@ -4,7 +4,7 @@ File to scrap the websites
 from typing import Any
 from bs4 import BeautifulSoup
 import requests
-import util
+import src.util as util
 
 # Load the settings from the util file
 settings = util.load_json_configuration()
@@ -37,6 +37,9 @@ def scrap_information(url: str) -> dict[str, Any]:
 
     # Get the fields
     fields = interpret_fields(settings['fields'])
+
+    # Debug about the fetching phase
+    print("[DEBUG] fetching item from the website...")
 
     # Fetch the content of the html page
     html = requests.get(url=url, headers=settings['header'])

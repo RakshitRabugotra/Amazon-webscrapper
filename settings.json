@@ -7,5 +7,6 @@
         "price-symbol": "span~class:a-price-symbol",
         "price-whole": "span~class:a-price-whole",
         "availability": "div~id:availability"
-    }
+    },
+    "wishlist-txt": "./wishlist.txt"
 }
